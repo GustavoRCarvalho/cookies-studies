@@ -4,11 +4,10 @@ import styled from "styled-components"
 export const InputText = () => {
   const [cookies, setCookie] = useCookies(["text"])
 
-  console.log("cookies: ", cookies)
-
-  function onChange(newName) {
-    setCookie("text", newName)
+  function onChange(newText) {
+    setCookie("text", newText)
   }
+
   return (
     <InputCustom
       type="text"
